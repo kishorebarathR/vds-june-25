@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+
+/* my-journey carousel-slide  START*/
+
+.slick-initialized .slick-slide {
+  padding: 1rem 0;
 }
+.center .slick-center .img-s {
+  transform: scale(1.3);
+  z-index: 10000;
+  transition: all 400ms ease-in-out;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+/* Limit dots to 3 */
+.slick-dots li {
+  display: none;
+}
+.slick-dots li:nth-child(-n + 3) {
+  display: block;
+}
+
+/* Hide the first three dots */
+.slick-dots li:nth-child(-n + 3) {
+  display: none;
+}
+
+.slick-dots {
+  justify-content: flex-start;
+}
+
+/* my-journey carousel-slide  END*/
