@@ -16,7 +16,7 @@ const PublicEye = () => {
           className="bg-[url('/home_images/about_satheesan_background.png')]  "
           loading="lazy"
         >
-          <p className="text-4xl text-[#035C96] text-center font-semibold pb-5">
+          <p className="text-[34px] text-[#035C96] text-center font-semibold pb-5">
             In the Public Eye
           </p>
           {/* start */}

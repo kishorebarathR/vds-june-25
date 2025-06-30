@@ -69,7 +69,7 @@ const MeUnfiltered = () => {
         <span className="absolute inset-0 bg-black opacity-70"></span>
         {/* Overlay */}
         <div className="relative z-10 container mx-auto">
-          <h1 className="text-4xl font-bold mb-14 text-center text-white pt-10">
+          <h1 className="text-[34px] font-bold mb-14 text-center text-white pt-10">
             Me, Unfiltered
           </h1>
 
