@@ -115,7 +115,7 @@ const Headerpage = () => {
               className={`border-b ${pathname === href ? "bg-gray-500" : ""}`}
             >
               <Link href={href} passHref>
-                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
+                <div className="flex items-center py-5 px-4 rounded-lg text-[16px] cursor-pointer">
                   <span>{label}</span>
                 </div>
               </Link>

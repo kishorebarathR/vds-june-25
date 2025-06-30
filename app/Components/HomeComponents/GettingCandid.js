@@ -111,7 +111,7 @@ const VideoPlayer = () => {
                 <a
                   href="https://www.youtube.com/c/dialoguewithvds/videos"
                   target="_blank"
-                  className="focus:outline-none text-white bg-[#880505] hover:bg-red-800 font-medium rounded-md text-xl px-7 py-3 me-2 mb-2"
+                  className="focus:outline-none text-white bg-[#880505] hover:bg-red-800 font-medium rounded-md text-[18px] px-7 py-3 me-2 mb-2"
                 >
                   Subscribe
                 </a>
@@ -122,8 +122,8 @@ const VideoPlayer = () => {
           {/* Playlist */}
           <div className="lg:w-1/4 mt-7">
             <div className="flex justify-between items-center bg-[#880505] px-2 pt-2 rounded-t-lg ">
-              <h2 className="text-xl text-white text-left">Playlist</h2>
-              <h2 className="text-xl text-white text-right">
+              <h2 className="text-[16px] text-white text-left">Playlist</h2>
+              <h2 className="text-[16px] text-white text-right">
                 {videos.length} Videos
               </h2>
             </div>
