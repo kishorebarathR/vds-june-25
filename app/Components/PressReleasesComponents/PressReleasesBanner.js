@@ -6,7 +6,7 @@ const PressReleasesBanner = () => {
     <>
       <div className="relative">
         <Image
-          className="w-full h-[84vh]"
+          className="w-full lg:h-[84vh] h-[60vh]"
           width={1050}
           height={850}
           src="/press_release/press.jpeg"
