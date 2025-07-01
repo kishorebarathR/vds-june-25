@@ -8,6 +8,45 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
+.bounce-in {
+  animation: bounce-in 1.4s ease infinite;
+}
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* .carousel-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; 
+}
+
+.slick-dots li button:before {
+  color: #fff; 
+} */
+
 
 /* my-journey carousel-slide  START*/
 

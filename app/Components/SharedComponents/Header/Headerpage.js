@@ -84,7 +84,7 @@ const Headerpage = () => {
         id="drawer-right-example"
         className={`bg-[#033B5F] fixed top-0 right-0 z-40 h-screen overflow-y-auto transition-transform ${
           drawerOpen ? "translate-x-0" : "translate-x-full"
-        } w-80`}
+        } w-72`}
         tabIndex="-1"
       >
         <button
