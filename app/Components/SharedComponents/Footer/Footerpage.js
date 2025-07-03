@@ -22,8 +22,8 @@ const Footerpage = () => {
       >
         {/* Related Websites Section */}
         <div className="text-white ">
-          <h3 className="text-4xl font-semibold p-5">Related Websites</h3>
-          <div className="text-2xl">
+          <h3 className="text-[30px] font-semibold p-5">Related Websites</h3>
+          <div className="lg:text-[20px] text-[18px]">
             <Link href="https://www.inc.in/">
               <p className="p-5">Indian National Congress</p>
             </Link>
@@ -42,7 +42,7 @@ const Footerpage = () => {
         {/* Be My Friend Form Section */}
        <FormComponents />
 
-        {/* Contact Info and Profile Visitors Section */}
+
         <div className="fixed bottom-5 right-5 z-50">
           <Link href="/get-in-touch">
             <Image
@@ -57,7 +57,7 @@ const Footerpage = () => {
       </div>
 
       {/* Copyright Section */}
-      <div className="bg-gradient-to-b from-[#035C96] to-[#022E4B] py-5 text-center text-white text-xl shadow-t ">
+      <div className="bg-gradient-to-b from-[#035C96] to-[#022E4B] py-5 text-center text-white text-[16px]  shadow-t ">
         Copyright © {currentYear}  All rights reserved.
       </div>
     </div>

@@ -1,4 +1,3 @@
-
 "use client"
 import React, { useState } from "react"
 import Link from "next/link"
@@ -22,21 +21,22 @@ const Timeline = () => {
   const [hoveredYear, setHoveredYear] = useState(null)
 
   return (
-    <div className="w-full bg-[#035C96] p-3 relative">
+    <div className="w-full bg-[#035C96] p-3 relative ">
       <div className="relative flex justify-between items-center ">
         {years.map((year) => (
           <div
             key={year}
             className="relative flex flex-col items-center"
-            onMouseOver={() => setHoveredYear(year)}
-           
+            // Set hoveredYear when the mouse enters this div
+            onMouseEnter={() => setHoveredYear(year)}
+            // Clear hoveredYear when the mouse leaves this div
+            onMouseLeave={() => setHoveredYear(null)}
           >
             <Link href={`/my-journey?year=${year}`}>
               <div className="flex flex-col items-center cursor-pointer">
                 {hoveredYear === year && (
                   <img
                     src={yearImagePaths[year]}
-                    
                     alt={`Image for ${year}`}
                     className="absolute top-[-100px] w-[120px] rounded h-[88px]"
                   />

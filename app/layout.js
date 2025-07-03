@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <body className={`${merriweather.className} font-sans`}>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer /> 
         <Script async src="third-party.js" />
       </body>
     </html>

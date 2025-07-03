@@ -46,7 +46,7 @@ const Contactform = () => {
   const createPost = async () => {
     setErrors({});
     setSuccessMessage('');
-    setIsLoading(true); // Set loading to true
+    setIsLoading(true); 
 
     const formData = new FormData();
     formData.append('yourName', yourName);
@@ -88,7 +88,7 @@ const Contactform = () => {
     <div>
       <form onSubmit={handleSubmit} className="px-7 bg-[#072D46] w-full merriweather-regular">
         <div className="mb-5">
-          <h3 className="text-center text-4xl p-5 text-white merriweather-regular font-semibold">
+          <h3 className="text-center text-[30px] p-5 text-white merriweather-regular font-semibold">
             Be My Friend
           </h3>
         </div>
@@ -103,7 +103,7 @@ const Contactform = () => {
             name="name"
             value={yourName}
             onChange={handleChange}
-            className="bg-[#033B5F] py-3 text-xl rounded-lg block w-full border border-[#033B5F] text-black focus:outline-none"
+            className="bg-[#033B5F] py-3 text-[15px] lg:text-[20px]  px-3  rounded-lg block w-full border border-[#033B5F] text-white focus:outline-none"
             placeholder="Name"
             required
           />
@@ -116,7 +116,7 @@ const Contactform = () => {
             name="mobile"
             value={yourPhone}
             onChange={handleChange}
-            className="bg-[#033B5F] py-3 text-xl rounded-lg block w-full border border-[#033B5F] text-black focus:outline-none"
+            className="bg-[#033B5F] py-3 text-[15px] lg:text-[20px]  px-3  rounded-lg block w-full border border-[#033B5F] text-white focus:outline-none"
             placeholder="Mobile Number"
             required
           />
@@ -129,7 +129,7 @@ const Contactform = () => {
             name="email"
             value={yourEmail}
             onChange={handleChange}
-            className="bg-[#033B5F] py-3 text-xl rounded-lg block w-full border border-[#033B5F] text-black focus:outline-none"
+            className="bg-[#033B5F] py-3 text-[15px] lg:text-[20px]  px-3  rounded-lg block w-full border border-[#033B5F] text-white focus:outline-none"
             placeholder="Email ID"
             required
           />
@@ -138,7 +138,7 @@ const Contactform = () => {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="text-white border font-medium rounded-md text-xl px-5 py-2.5 mb-5 w-32"
+            className="text-white border font-medium rounded-md text-[15px] lg:text-[20px] px-5 py-2.5 mb-5 w-32"
             disabled={isLoading} // Disable button during loading
           >
             {isLoading ? 'Submitting...' : 'Submit'}

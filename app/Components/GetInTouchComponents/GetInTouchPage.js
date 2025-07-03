@@ -122,7 +122,7 @@ const GetInTouchPage = () => {
         </div>
       </div>
 
-      <div className="bg-gradient-to-b from-[#035C96] to-[#022E4B] py-5 text-center text-white text-xl shadow-t ">
+      <div className="bg-gradient-to-b from-[#035C96] to-[#022E4B] py-5 text-center text-white  text-[16px] shadow-t ">
         Copyright © 2022 All rights reserved.
       </div>
     </div>
