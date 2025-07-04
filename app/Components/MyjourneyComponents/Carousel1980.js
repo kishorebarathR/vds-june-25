@@ -65,10 +65,10 @@ export default function SimpleSlider() {
         <div className="bg-white rounded-3xl p-3 mt-5">
           <Slider {...settings}>
             {imagePaths.map((path, index) => (
-              <div key={index} className="w-full rounded-2xl h-80">
+              <div key={index} className="w-full rounded-2xl lg:h-80 h-72">
                 <Image
-                  width={500}
-                  height={550}
+                  width={1000}
+                  height={850}
                   src={path}
                   alt={`Carousel image ${index + 1}`}
                   loading="lazy"

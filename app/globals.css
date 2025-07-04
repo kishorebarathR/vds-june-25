@@ -45,7 +45,7 @@ body {
 
 .slick-dots li button:before {
   color: #fff; 
-} */
+} 
 
 
 /* my-journey carousel-slide  START*/
@@ -65,16 +65,15 @@ body {
   padding-bottom: 15px !important;
 }
 
-/* Limit dots to 3 */
 .slick-dots li {
   display: none;
 }
-.slick-dots li:nth-child(-n + 3) {
+/* .slick-dots li:nth-child(+n + 4) {
   display: block;
-}
+} */
 
-/* Hide the first three dots */
-.slick-dots li:nth-child(-n + 3) {
+
+.slick-dots li:nth-child(+n + 4) {
   display: none;
 }
 
