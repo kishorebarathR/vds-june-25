@@ -22,7 +22,7 @@ const Footerpage = () => {
       >
         {/* Related Websites Section */}
         <div className="text-white ">
-          <h3 className="text-[30px] font-semibold p-5">Related Websites</h3>
+          <h3 className=" lg:text-[30px] text-[28px] font-semibold p-5">Related Websites</h3>
           <div className="lg:text-[20px] text-[18px]">
             <Link href="https://www.inc.in/">
               <p className="p-5">Indian National Congress</p>

@@ -65,15 +65,15 @@ const Homepage = () => {
 
           <div className=" mt-10 border-2  border-[#033B5F]  text-center flex justify-center items-center  ">
             <div>
-              <p className="text-[#035C96] text-[34px] font-semibold merriweather-bold">
+              <p className="text-[#035C96] lg:text-[34px] text-[24px] font-semibold merriweather-bold">
                 Hello, I am
               </p>
-              <h6 className="text-[#035C96] text-[34px] font-semibold merriweather-bold mb-3">
+              <h6 className="text-[#035C96] lg:text-[34px] text-[24px] font-semibold merriweather-bold mb-3">
                 VD Satheesan…
               </h6>
               <Link
                 href="/sincerely-me"
-                className="border lg:border-4 border-sky-800 px-6   p-2 items-center justify-center bg-white rounded-sm text-[#035C96] text-xl  w-40 mb-5 merriweather-regular"
+                className="border lg:border-2 border-sky-800 px-6   p-2 items-center justify-center bg-white rounded-sm text-[#035C96] text-[18px]  w-40 mb-5 merriweather-regular"
                 target=""
                 rel="noopener noreferrer"
               >

@@ -88,7 +88,7 @@ const Contactform = () => {
     <div>
       <form onSubmit={handleSubmit} className="px-7 bg-[#072D46] w-full merriweather-regular">
         <div className="mb-5">
-          <h3 className="text-center text-[30px] p-5 text-white merriweather-regular font-semibold">
+          <h3 className="text-center lg:text-[30px] text-[28px] p-5 text-white merriweather-regular font-semibold">
             Be My Friend
           </h3>
         </div>

@@ -16,7 +16,7 @@ const PublicEye = () => {
           className="bg-[url('/home_images/about_satheesan_background.png')]  "
           loading="lazy"
         >
-          <p className="text-[34px] text-[#035C96] text-center font-semibold pb-5">
+          <p className="lg:text-[34px] text-[28px] text-[#035C96] text-center font-semibold pb-5">
             In the Public Eye
           </p>
           {/* start */}
@@ -248,7 +248,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className=" hover:filter hover:brightness-50 duration-700 mb-1 h-40"
+                className="hidden lg:block  hover:filter  hover:brightness-50 duration-700 mb-1 h-40"
                 src="/home_images/PublicEye_Img/vds-5.jpeg"
                 alt="public_eye_images"
               />
@@ -284,7 +284,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
+                className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/PublicEye_Img/vds-27.jpeg"
                 alt="public_eye_images"
               />

@@ -1,6 +1,7 @@
 "use client"
 import React from "react"
 import Head from "next/head"
+import Script from "next/script"
 import config from "@/postcss.config.mjs"
 
 
@@ -23,7 +24,7 @@ function NextSeo({ title, description, path, metaImage }) {
       <meta property="og:image" content={metaImage} />
       <meta name="twitter:card" content="summary_large_image" />
 
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
