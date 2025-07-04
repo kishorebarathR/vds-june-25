@@ -1,7 +1,7 @@
 'use client'
 import React from "react"
 import PressreleasesComponents from "../Components/PressReleasesComponents"
-// import Seo from "@/Components/SeoComponents/Seo"
+import Seo from "../Components/SeoComponents/Seo"
 import { usePathname } from "next/navigation"
 const Page = () => {
   const pathname = usePathname()
@@ -12,12 +12,12 @@ const Page = () => {
   const metaImage = ""
   return (
     <>
-      {/* <Seo
+      <Seo
         title={title}
         description={description}
         path={path}
         metaImage={metaImage}
-      /> */}
+      />
       <PressreleasesComponents />
     </>
   )

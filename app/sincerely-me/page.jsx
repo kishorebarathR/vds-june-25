@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
 import SincerelyMe from "../Components/SincerelyMeComponents"
-// import Seo from "@/Components/SeoComponents/Seo"
+ import Seo from "../Components/SeoComponents/Seo"
 import { usePathname } from "next/navigation"
 
 const Page = () => {
@@ -12,15 +12,15 @@ const Page = () => {
   const path = `${pathname}`
   const metaImage = ""
   return (
-    <div>
-      {/* <Seo
+    <>
+      <Seo
         title={title}
         description={description}
         path={path}
         metaImage={metaImage}
-      /> */}
+      />
       <SincerelyMe />
-    </div>
+    </>
   )
 }
 

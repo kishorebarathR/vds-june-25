@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
 import MyConstituency from "../Components/my-constituencyComponents"
-// import Seo from "@/Components/SeoComponents/Seo"
+import Seo from "../Components/SeoComponents/Seo"
 import { usePathname } from "next/navigation"
 
 const Page = () => {
@@ -13,12 +13,12 @@ const Page = () => {
   const metaImage = ""
   return (
     <>
-      {/* <Seo
+      <Seo
         title={title}
         description={description}
         path={path}
         metaImage={metaImage}
-      /> */}
+      />
       <MyConstituency />
     </>
   )

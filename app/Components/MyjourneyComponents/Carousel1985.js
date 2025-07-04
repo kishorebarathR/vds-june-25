@@ -79,7 +79,7 @@ export default function SimpleSlider() {
             ))}
           </Slider>
 
-          <p className="text-black text-xl merriweather-regular text-left p-5 mt-5">
+          <p className="text-black text-[18px] merriweather-regular text-left p-5 mt-5">
             Continuing his commitment to education and leadership, VD Satheeshan
             joined the postgraduate diploma course in social service at Rajagiri
             College of Social Science, Kalamassery. His dedication to student

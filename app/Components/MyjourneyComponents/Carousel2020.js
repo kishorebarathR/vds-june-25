@@ -60,7 +60,7 @@ export default function SimpleSlider() {
   return (
     <div className="bg-[#F2EBCD] carosel-body merriweather-regular">
       <div className="container mx-auto p-5">
-        <p className=" text-3xl font-semibold p-3 bg-[#398AF5] w-60 text-center  text-white">
+        <p className=" text-3xl font-semibold p-3 bg-[#398AF5] max-w-64 text-center  text-white">
           2020 - Present
         </p>
         <div className="bg-white rounded-3xl p-3 mt-5">
@@ -81,7 +81,7 @@ export default function SimpleSlider() {
 
           <div className="lg:flex pb-5">
             <div className="lg:w-[80%]">
-              <p className="text-black text-xl merriweather-regular text-left p-5 mt-5">
+              <p className="text-black text-[18px] text-left p-5 mt-5">
                 Elected to the Kerala legislative assembly again for the fifth
                 time from the N.Paravur constituency by a margin of 21,301 votes
                 and declared as the Leader of Opposition of the 15th Kerala
