@@ -98,7 +98,7 @@ const Journey = () => {
                 </p>
 
                 {/* <!-- Mobile view --> */}
-                <p className="block lg:hidden bg-red-800 lg:w-32 p-5 text-white">
+                <p className="block lg:hidden bg-red-800  p-3 mt-4 text-[16px] w-full text-white">
                   “I believe that serving the people is not just a
                   responsibility, but a privilege, and I will continue to work
                   hard to fulfill this purpose.”
@@ -111,7 +111,7 @@ const Journey = () => {
         {/* Left Side Content End */}
 
         <div className="lg:flex-1  ">
-          <h3 className="text-3xl lg:text-[50px] p-4  font-semibold">
+          <h3 className="text-3xl lg:text-[50px] text-[28px] p-4  font-semibold">
             The journey that made me who I am today
           </h3>
           <h6 className="text-2xl lg:text-[25px] p-4 font-normal">
@@ -150,7 +150,6 @@ const Journey = () => {
             </div>
           </div>
 
-          
           <div className="lg:flex p-3 border-4 mt-5 border-gray-500 lg:ms-4 text-xl">
             <div className="lg:w-1/2 w-full">
               <Image
@@ -176,7 +175,9 @@ const Journey = () => {
           </div>
 
           {/* Work So Far Start */}
-          <h2 className="text-3xl lg:text-[42px] p-4 font-semibold">My Work So Far</h2>
+          <h2 className="text-3xl lg:text-[42px] text-[28px] p-4 font-semibold">
+            My Work So Far
+          </h2>
 
           <div className="lg:flex p-4 gap-2 text-[16px]">
             <p className=" lg:border-r-2 border-black mb-9 lg:w-6/12 px-1">
@@ -204,7 +205,9 @@ const Journey = () => {
           {/* Work So Far End */}
 
           {/* My Interests Start */}
-          <div className="text-3xl lg:text-[42px] font-semibold ms-4 ">My Interests</div>
+          <div className="text-3xl lg:text-[42px] text-[28px] font-semibold ms-4 ">
+            My Interests
+          </div>
           <h3 className="p-4 lg:w-9/12 text-[16px]">
             Ever since I was a child, I have been captivated by a wide range of
             interests that have shaped my life. My love for reading was the
@@ -282,13 +285,13 @@ const Journey = () => {
 
           {/* Awards and  Recognitions Start*/}
           <div>
-            <h3 className="text-3xl lg:text-[42px] font-semibold mt-10 p-4 ">
+            <h3 className="text-3xl lg:text-[42px] text-[24px] font-semibold mt-10 p-4 ">
               Awards and Recognitions
             </h3>
           </div>
 
           <div className="">
-            <div className="lg:border-4 border-[#173A5B] mx-auto m-0 ">
+            <div className="lg:border-3 border-[#173A5B] mx-auto m-0 ">
               <div className="relative bg-[#173A5B] text-[16px]">
                 <h3 className=" text-white lg:p-24 p-9 lg:w-9/12 ">
                   My passion for serving the people as a politician has been

@@ -121,7 +121,7 @@ export default function SimpleSlider() {
       </div>
       <div className="lg:flex container mx-auto">
         <div className="lg:w-[15%] lg:my-10 bg-[#233876] flex items-center justify-center px-2">
-          <p className="text-white text-3xl font-semibold p-4 text-center ">
+          <p className="text-white lg:text-3xl text-[28px]  font-semibold p-4 text-center ">
             What Drives Me
           </p>
         </div>

@@ -6,7 +6,7 @@ const SincerelyMe = () => {
       <div className="bg-[#EFEFEF] merriweather-bold text-2xl">
         <div className="lg:flex lg:flex-row">
           <div className="flex flex-col lg:w-1/3 lg:pr-5 lg:text-start">
-            <div className="text-left font-semibold p-5 text-[22px]">
+            <div className="text-left font-semibold p-5 lg:text-[22px] text-[18px]">
               <p>“In a democracy, we</p>
               <p>don’t need</p>
               <p>monologues</p>
@@ -15,11 +15,11 @@ const SincerelyMe = () => {
           </div>
 
           <div className="flex flex-col lg:w-1/3  lg:text-center justify-center items-center">
-            <h1 className=" lg:text-[70px]  mb-4">Sincerely, Me</h1>
+            <h1 className=" lg:text-[70px] text-[30px]  mb-4">Sincerely, Me</h1>
             <Image
               width={400}
               height={140}
-              className="sm:w-96 w-44 "
+              className="lg:w-96 w-80 "
               src="/sincere_images/sincerely-img-11.png"
               alt="Nettor Kerala"
               loading="lazy"
@@ -37,13 +37,13 @@ const SincerelyMe = () => {
               alt="sincere_images"
               loading="lazy"
             />
-            <h6 className="bg-[#9D9D9D] text-white text-[18px] lg:p-6 p-10 lg:w-72 flex items-center justify-center text-left">
+            <h6 className="bg-[#9D9D9D] text-white text-[16px] lg:text-[18px]  lg:p-6 p-10  lg:w-72 flex items-center justify-center text-left">
               “We need to strike a balance between sustainable development and
               environment…
             </h6>
 
             <div className="bg-sky-800 w-full">
-              <h6 className="text-white text-[18px] p-12 lg:w-3/5 flex items-center justify-center text-left">
+              <h6 className="text-white text-[16px] lg:text-[18px] p-12 lg:w-3/5 flex items-center justify-center text-left">
                 There is no space for the conventional kind of opposition for
                 the sake of opposing something in this era. We need to have a
                 consensus and continuity in developmental activities”
