@@ -18,7 +18,7 @@ const InMyBookShelfPage = () => {
   return (
     <>
       <div>
-        <h1 className="text-[34px] text-[#035C96] text-center font-semibold pt-10 merriweather-regular">
+        <h1 className="lg:text-[34px]  text-[30px] text-[#035C96] text-center font-semibold pt-10 merriweather-regular">
           In My Book Shelf
         </h1>
         <div className="container mx-auto lg:px-5">
@@ -54,7 +54,7 @@ const InMyBookShelfPage = () => {
       </div>
 
       <div>
-        <h3 className="text-[34px] text-[#035C96] text-center font-semibold pt-5 merriweather-regular">
+        <h3 className="lg:text-[34px]  text-[30px] text-[#035C96] text-center font-semibold pt-5 merriweather-regular">
           My Book Recommendations
         </h3>
       </div>

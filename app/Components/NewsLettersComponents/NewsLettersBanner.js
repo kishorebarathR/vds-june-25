@@ -13,7 +13,7 @@ const NewsLettersBanner = () => {
           loading="lazy"
         />
         <div className="flex items-center justify-center w-full h-full -mt-[60vh] lg:-mt-[84vh]">
-          <h6 className="text-center text-[50px] text-white lg:ms-20">
+          <h6 className="text-center lg:text-[50px] text-[40px]  text-white lg:ms-20">
             Newsletters
           </h6>
         </div>

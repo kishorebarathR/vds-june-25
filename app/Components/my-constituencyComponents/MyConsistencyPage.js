@@ -5,7 +5,7 @@ const MyConstituencyPage = () => {
   return (
     <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full">
       <div className="container mx-auto">
-        <h1 className="text-[34px] text-[#035C96] text-center font-semibold pt-10">
+        <h1 className="text-[30px] lg:text-[34px] text-[#035C96] text-center font-semibold pt-10">
           My Constituency
         </h1>
 

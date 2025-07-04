@@ -13,7 +13,7 @@ const PressReleasesBanner = () => {
           alt="press"
           loading="lazy"
         />
-        <h1 className="absolute top-1/2 lg:left-28 transform -translate-y-1/2 text-center text-6xl  text-[#033B5F] merriweather-regular">
+        <h1 className="absolute top-1/2 lg:left-28 transform -translate-y-1/2 text-center lg:text-[50px] text-[40px] px-3  text-[#033B5F] merriweather-regular">
           Press Releases
         </h1>
       </div>
