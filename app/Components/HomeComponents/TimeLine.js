@@ -61,37 +61,57 @@ const Timeline = () => {
       )}
 
       {/* Timeline */}
-      <div className="w-full">
-        <div className="relative pt-5 bg-[#035C96] shadow-md pb-5">
+      <div className="w-full ">
+        <div className="relative lg:pt-5 pt-1   bg-[#035C96] shadow-md pb-5">
           {/* Minor Ticks */}
-          <div className="absolute top-17 left-0 w-full h-full z-0 flex justify-between">
+          <div className="absolute top-12 lg:top-19 left-0 w-full h-full z-0 flex justify-between">
             {Array.from({ length: 100 }).map((_, i) => (
               <div key={i} className="h-[16px] w-[2px] bg-white opacity-50"></div>
             ))}
           </div>
 
           {/* Year Markers */}
-          <div className="flex items-end justify-between relative z-10">
-            {timelineData.map((item) => (
-              <div
-                key={item.year}
-                className="relative flex flex-col items-center cursor-pointer group"
-                onMouseEnter={(e) => handleMouseEnter(item.year, e)}
-                onMouseLeave={handleMouseLeave}
-                style={{ width: `${100 / timelineData.length}%` }}
-              >
-                <Link href={`/my-journey?year=${item.year}`} className="absolute inset-0" />
+          <div className="relative z-10">
+            {/* Desktop View */}
+            <div className="sm:flex hidden items-end justify-between">
+              {timelineData.map((item) => (
+                <div
+                  key={item.year}
+                  className="relative flex flex-col items-center cursor-pointer group"
+                  onMouseEnter={(e) => handleMouseEnter(item.year, e)}
+                  onMouseLeave={handleMouseLeave}
+                  style={{ width: `${100 / timelineData.length}%` }}
+                >
+                  <Link href={`/my-journey?year=${item.year}`} className="absolute inset-0" />
+                  <span className="text-white text-sm md:text-[20px] font-extrabold group-hover:text-yellow-400 transition-colors">
+                    {item.year}
+                  </span>
+                  <div className="w-[2px] h-4  mt-2"></div>
+                </div>
+              ))}
+            </div>
 
-                {/* Year Label */}
-                <span className="text-white text-sm md:text-[20px] font-extrabold group-hover:text-yellow-400 transition-colors">
-                  {item.year}
-                </span>
-
-                {/* Vertical Tick */}
-                <div className="w-[2px] h-4 "></div>
+            {/* Mobile View (Scrollable) */}
+            <div className="sm:hidden overflow-x-auto scrollbar-hide">
+              <div className="flex items-end w-max px-4 gap-6">
+                {timelineData.map((item) => (
+                  <div
+                    key={item.year}
+                    className="flex flex-col items-center cursor-pointer group min-w-[64px] relative"
+                    onMouseEnter={(e) => handleMouseEnter(item.year, e)}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    <Link href={`/my-journey?year=${item.year}`} className="absolute inset-0" />
+                    <span className="text-white text-[14px] font-bold group-hover:text-yellow-400 transition-colors">
+                      {item.year}
+                    </span>
+                    <div className="w-[2px] h-4 bg-white mt-1"></div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
+
         </div>
       </div>
     </div>
