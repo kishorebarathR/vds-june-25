@@ -1,4 +1,4 @@
-// app/layout.js or app/layout.tsx
+import React from "react"
 import "./globals.css"
 import { Merriweather } from "next/font/google"
 import Script from "next/script"

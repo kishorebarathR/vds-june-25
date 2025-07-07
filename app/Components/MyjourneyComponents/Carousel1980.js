@@ -50,10 +50,10 @@ export default function SimpleSlider() {
   const imagePaths = [
     "/my-journey/carousel-img-2.png",
     "/my-journey/carousel-img-3.png",
-    "/my-journey/carousel-img-1.png",
+    "/my-journey/carousel-imgs-01.jpg",
     "/my-journey/carousel-img-2.png",
     "/my-journey/carousel-img-3.png",
-    "/my-journey/carousel-img-1.png",
+    "/my-journey/carousel-imgs-01.jpg",
   ]
 
   return (

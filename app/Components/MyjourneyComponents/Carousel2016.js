@@ -49,10 +49,10 @@ export default function SimpleSlider() {
   }
 
   const imagePaths = [
-    "/my-journey/carousel-img-23.jpeg",
+    "/my-journey/carousel-img-023.jpeg",
     "/my-journey/carousel-img-24.png",
     "/my-journey/carousel-img-22.jpeg",
-    "/my-journey/carousel-img-23.jpeg",
+    "/my-journey/carousel-img-023.jpeg",
     "/my-journey/carousel-img-24.png",
     "/my-journey/carousel-img-22.jpeg",
   ]
@@ -66,7 +66,7 @@ export default function SimpleSlider() {
         <div className="bg-white rounded-3xl p-3 mt-5">
           <Slider {...settings}>
             {imagePaths.map((path, index) => (
-             <div key={index} className="w-full rounded-2xl lg:h-80 h-72">
+              <div key={index} className="w-full rounded-2xl lg:h-80 h-72">
                 <Image
                   width={500}
                   height={550}
@@ -81,7 +81,7 @@ export default function SimpleSlider() {
 
           <div className="lg:flex pb-5">
             <div className="lg:w-[80%]">
-            <p className="text-black text-[18px] text-left p-5 mt-5">
+              <p className="text-black text-[18px] text-left p-5 mt-5">
                 Continuing his dedication to public service, VD Satheeshan was
                 re-elected to the Assembly for the fourth time. His leadership
                 qualities were once again recognized as he assumed the position
@@ -113,7 +113,7 @@ export default function SimpleSlider() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                  <FaXTwitter className="w-10 h-10 text-white hover:bg-black transition-colors duration-300 bg-[#36528C] rounded-full p-2" />
+                    <FaXTwitter className="w-10 h-10 text-white hover:bg-black transition-colors duration-300 bg-[#36528C] rounded-full p-2" />
                   </a>
                 </div>
               </div>
