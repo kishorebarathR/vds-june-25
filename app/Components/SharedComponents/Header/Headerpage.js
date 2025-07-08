@@ -36,17 +36,17 @@ const Headerpage = () => {
           <Link href="/" passHref>
             <div className="lg:flex items-center">
               <Image
-                width={250}
-                height={250}
+                width={1050}
+                height={850}
                 src="/home_images/vds-main.png"
-                className="p-0 h-32"
+                className="p-0 w-72 h-32"
                 alt="vds"
               />
-              <div className="ml-4">
+              <div className="lg:-ml-10 ml-4">
                 <p className="text-white text-[30px] font-bold">
                   V D Satheesan
                 </p>
-                <p className="text-white text-[20px] ms-2 font-bold">
+                <p className="text-white text-[20px]  font-bold">
                   For the people
                 </p>
               </div>
