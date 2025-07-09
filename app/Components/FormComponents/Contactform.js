@@ -7,21 +7,19 @@ const Contactform = () => {
   const [yourPhone, setYourPhone] = useState('');
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState('');
-  const [isLoading, setIsLoading] = useState(false); // Loading state
+  const [isLoading, setIsLoading] = useState(false);
 
-  // Handle field changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     if (name === 'name') {
       setYourName(value);
     } else if (name === 'email') {
       setYourEmail(value);
-    } else if (name === 'mobile') {
+    } else if (name === 'phone') {
       setYourPhone(value);
     }
   };
 
-  // Validation logic
   const validate = () => {
     const newErrors = {};
     if (!yourName.trim()) {
@@ -33,25 +31,24 @@ const Contactform = () => {
       newErrors.yourEmail = 'Invalid email address.';
     }
     if (!yourPhone.trim()) {
-      newErrors.yourPhone = 'Mobile number is required.';
+      newErrors.yourPhone = 'Phone number is required.';
     } else if (!/^\d{10}$/.test(yourPhone)) {
-      newErrors.yourPhone = 'Mobile number must be 10 digits.';
+      newErrors.yourPhone = 'Phone number must be 10 digits.';
     }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
-  // Submit form to API
   const createPost = async () => {
     setErrors({});
     setSuccessMessage('');
-    setIsLoading(true); 
+    setIsLoading(true);
 
     const formData = new FormData();
-    formData.append('yourName', yourName);
-    formData.append('yourEmail', yourEmail);
-    formData.append('yourPhone', yourPhone);
+    formData.append('your-name', yourName);
+    formData.append('your-email', yourEmail);
+    formData.append('your-phone', yourPhone);
 
     try {
       const response = await axios.post(
@@ -63,20 +60,23 @@ const Contactform = () => {
           },
         }
       );
-      console.log('API Response:', response.data);
-      setSuccessMessage('Form submitted successfully!');
-      setYourName('');
-      setYourEmail('');
-      setYourPhone('');
+
+      if (response.data.status === 'mail_sent') {
+        setSuccessMessage('Form submitted successfully!');
+        setYourName('');
+        setYourEmail('');
+        setYourPhone('');
+      } else {
+        setErrors({ message: response.data.message || 'Submission failed. Please try again.' });
+      }
     } catch (error) {
-      console.error('There was an error submitting the form!', error);
+      console.error('Submission error:', error);
       setErrors({ message: 'Failed to submit the form. Please try again later.' });
     } finally {
-      setIsLoading(false); // Set loading to false after request is complete
+      setIsLoading(false);
     }
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
@@ -88,7 +88,7 @@ const Contactform = () => {
     <div>
       <form onSubmit={handleSubmit} className="px-7 bg-[#072D46] w-full merriweather-regular">
         <div className="mb-5">
-          <h3 className="text-center lg:text-[30px] text-[28px] p-5 text-white merriweather-regular font-semibold">
+          <h3 className="text-center lg:text-[30px] text-[28px] p-5 text-white font-semibold">
             Be My Friend
           </h3>
         </div>
@@ -99,47 +99,44 @@ const Contactform = () => {
         <div className="mb-5 py-3">
           <input
             type="text"
-            id="name"
             name="name"
             value={yourName}
             onChange={handleChange}
-            className="bg-[#033B5F] py-3 text-[15px] lg:text-[20px]  px-3  rounded-lg block w-full border border-[#033B5F] text-white focus:outline-none"
+            className="bg-[#033B5F] py-3 text-[15px] lg:text-[20px] px-3 rounded-lg block w-full border border-[#033B5F] text-white focus:outline-none"
             placeholder="Name"
-            required
           />
           {errors.yourName && <p className="text-red-500">{errors.yourName}</p>}
         </div>
+
         <div className="mb-5 py-3">
           <input
             type="tel"
-            id="mobile"
-            name="mobile"
+            name="phone"
             value={yourPhone}
             onChange={handleChange}
-            className="bg-[#033B5F] py-3 text-[15px] lg:text-[20px]  px-3  rounded-lg block w-full border border-[#033B5F] text-white focus:outline-none"
-            placeholder="Mobile Number"
-            required
+            className="bg-[#033B5F] py-3 text-[15px] lg:text-[20px] px-3 rounded-lg block w-full border border-[#033B5F] text-white focus:outline-none"
+            placeholder="Phone Number"
           />
           {errors.yourPhone && <p className="text-red-500">{errors.yourPhone}</p>}
         </div>
+
         <div className="mb-5 py-3">
           <input
             type="email"
-            id="email"
             name="email"
             value={yourEmail}
             onChange={handleChange}
-            className="bg-[#033B5F] py-3 text-[15px] lg:text-[20px]  px-3  rounded-lg block w-full border border-[#033B5F] text-white focus:outline-none"
+            className="bg-[#033B5F] py-3 text-[15px] lg:text-[20px] px-3 rounded-lg block w-full border border-[#033B5F] text-white focus:outline-none"
             placeholder="Email ID"
-            required
           />
           {errors.yourEmail && <p className="text-red-500">{errors.yourEmail}</p>}
         </div>
+
         <div className="flex justify-center">
           <button
             type="submit"
             className="text-white border font-medium rounded-md text-[15px] lg:text-[20px] px-5 py-2.5 mb-5 w-32"
-            disabled={isLoading} // Disable button during loading
+            disabled={isLoading}
           >
             {isLoading ? 'Submitting...' : 'Submit'}
           </button>

@@ -34,7 +34,7 @@ const Headerpage = () => {
       <nav className="bg-[#033B5F] drop-shadow-lg ">
         <div className="lg:max-w-screen-xl flex flex-wrap items-center justify-between p-0">
           <Link href="/" passHref>
-            <div className="lg:flex items-center">
+            <div className="lg:flex items-center  cursor-pointer">
               <Image
                 width={1050}
                 height={850}
